@@ -20,4 +20,14 @@ def orphanage(request,url):
     if not orp:
         return HttpResponseRedirect("/orphanages")
     return render(request,"single.html",{'orphanage':orp})
+
+def oldagehomes(request):
+    orp = Oldagehome.objects.all()
+    return render(request,"oldagehomes.html",{'oldagehomes':orp})
+
+def oldagehome(request,url):
+    orp = Oldagehome.objects.filter(url=url).first()
+    if not orp:
+        return HttpResponseRedirect("/oldagehomes")
+    return render(request,"oldagehome.html",{'oldagehome':orp})
 # Create your views here.

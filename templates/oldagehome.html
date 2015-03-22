@@ -10,12 +10,12 @@
 				<img src="/media/orphanages/{{orphanage.url}}1.jpg" alt=""/>
 		 
 			 <div class="blog-para">
-				 {{ orphanage.description | safe}}
+				 {{ orphanage.description}}
             </div>
             <div class="blog-contact">
             	<h3>Contact</h3>
 		<p>Phone: {{ orphanage.contact_number}}</p>
-		<p> Address : {{ orphanage.address | safe}}</p>
+		<p> Address : {{ orphanage.address }}</p>
             	
             </div>
              <div class="clearfix"> </div>
@@ -24,7 +24,7 @@
 				
 				<h3>Donate us</h3>
 				<div class="subscribe">
-					<p>Help the needy children</p>
+					<p>Make your loved ones birthday special</p>
 				<div class="sub">
 					
 					<a href="{{orphanage.donation_link}}"><input type="submit" value="Donate us"></a>

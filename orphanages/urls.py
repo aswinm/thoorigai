@@ -7,4 +7,6 @@ urlpatterns = patterns('',
         url(r'^contact/?$',views.contact),
         url(r'^orphanages/?$',views.orphanages),
         url(r'^orphanages/(?P<url>\w+)/?$',views.orphanage),
+        url(r'^oldagehomes/?$',views.oldagehomes),
+        url(r'^oldagehomes/(?P<url>\w+)/?$',views.oldagehome),
         )
