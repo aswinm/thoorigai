@@ -1,0 +1,42 @@
+{% include "htmltop.html" %}
+
+	<div class="blog">
+	<div class="container">
+		<div class="blog-main">
+			<div class="blog-top">
+				<h3>{{ orphanage.name}}</h3>
+			</div>
+			<div class="col-md-8 blog-left">
+				<img src="/media/orphanages/{{orphanage.url}}1.jpg" alt=""/>
+		 
+			 <div class="blog-para">
+				 {{ orphanage.description}}
+            </div>
+            <div class="blog-contact">
+            	<h3>Contact</h3>
+		<p>Phone: {{ orphanage.contact_number}}</p>
+		<p> Address : {{ orphanage.address }}</p>
+            	
+            </div>
+             <div class="clearfix"> </div>
+			</div>
+			<div class="col-md-4 blog-right"> 
+				
+				<h3>Donate us</h3>
+				<div class="subscribe">
+					<p>Make your loved ones birthday special</p>
+				<div class="sub">
+					
+					<a href="{{orphanage.donation_link}}"><input type="submit" value="Donate us"></a>
+				</div>
+			</div>
+				
+				
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+{% include "htmlbottom.html" %}

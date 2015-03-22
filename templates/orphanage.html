@@ -1,0 +1,29 @@
+{% include "htmltop.html" %}
+<div class="events">
+	<div class="container">
+		<div class="event-main">
+			<div class="event-head">
+				<h3>ORPHANAGES</h3>
+			</div>
+			{% for orp in orphanages %}
+			<a href="/orphanages/{{orp.url}}"><div class="event-top">
+			<div class="col-md-6  e-left">
+				<h4>{{ orp.name }}</h4>
+				<img src="/media/orphanages/{{orp.url}}1.jpg" alt=""/>
+			</div>
+			<div class="col-md-6  e-right">
+				<p>{{ orp.address | safe }}</p>
+			     <div class="event-icon">
+				     Phone : {{ orp.contact_number}}
+			     </div>
+			</div>
+			<div class="clearfix"> </div>
+			</div>
+		</a>
+			{%endfor %}
+</div>
+<!--events end here-->
+
+
+
+{% include "htmlbottom.html" %}
