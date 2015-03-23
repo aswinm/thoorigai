@@ -32,4 +32,18 @@ def oldagehome(request,url):
     if not orp:
         return HttpResponseRedirect("/oldagehomes")
     return render(request,"oldagehome.html",{'oldagehome':orp})
+
+def birthdaydonation(request):
+    if request.method == "POST":
+        form = BirthdayForm(request.POST)
+        if form.is_valid():
+            b = form.save(commit=False)
+            b.orphanage = form.cleaned_data["orphanage"]
+            b.save()
+            return HttpResponseRedirect(b.orphanage.donation_link)
+        else:
+            return render(request,"index.html",{'form':form})
+    else:
+        return HttpResponseRedirect("/")
+
 # Create your views here.

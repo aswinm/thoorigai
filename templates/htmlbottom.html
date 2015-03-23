@@ -47,7 +47,8 @@
 </div>
 <script type="text/javascript" src="/static/js/move-top.js/"></script>
 <script type="text/javascript" src="/static/js/easing.js/"></script>
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }>
+<script type="application/x-javascript"> 
+addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
 </script>
 	<script type="text/javascript">
 			jQuery(document).ready(function($) {
@@ -56,6 +57,15 @@
 					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 				});
 			});
+			window.donatemodal = function(){
+				$("#regModal").modal("show");}
+			window.onload = function(){
+				url = window.location.href;
+				if(url.indexOf("birthday")>-1){
+					$("#regModal").modal("show");
+				}
+			}
+			
 	</script>
 
 </body>

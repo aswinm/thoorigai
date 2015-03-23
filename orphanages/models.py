@@ -36,6 +36,7 @@ class Birthdaysponsor(models.Model):
     bid = models.AutoField(primary_key=True)
     donators_name = models.CharField(max_length=200)
     birthday_person_name = models.CharField(max_length=200)
+    birthday_person_email = models.EmailField()
     birth_date = models.DateField()
     orphanage = models.ForeignKey(Orphanage)
 # Create your models here.
