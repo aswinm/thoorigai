@@ -908,7 +908,7 @@ ul.popular-tag li a:hover {
 }
 .subscribe {
 	border: 1px solid #ccc;
-	padding: 0;
+	padding: 10px 20px;
 }
 .subscribe input[type="text"] {
 	font-size: 12px;

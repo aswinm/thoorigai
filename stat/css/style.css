@@ -908,7 +908,7 @@ ul.popular-tag li a:hover {
 }
 .subscribe {
 	border: 1px solid #ccc;
-	padding: 1em 1.5em;
+	padding: 10px 20px;
 }
 .subscribe input[type="text"] {
 	font-size: 12px;
@@ -2608,6 +2608,7 @@ ul.p_n-list li {
 
 
 .carify{
+	width:100%;
 	margin-top:1%;
 
 
@@ -2615,8 +2616,8 @@ ul.p_n-list li {
 
 .boxed {
   border: 1px #9B242D ;
-  width: 20%;
-  margin-left: 70%;
-  margin-top: 0%;
+  width: 75%;
+  margin-left: 10%;
+  margin-top: 50%;
   margin-bottom: 0%;
 } 
