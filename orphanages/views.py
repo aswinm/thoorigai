@@ -1,9 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from orphanages.models import Orphanage,Oldagehome
+from orphanages.forms import BirthdayForm
 
 def index(request):
-    return render(request,"index.html")
+    form = BirthdayForm()
+    return render(request,"index.html",{'form':form})
 
 def about(request):
     return render(request,"about.html")
